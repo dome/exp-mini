@@ -8,3 +8,9 @@ services:
     container_name: 'frontend'
     env_file:
       -  ../envs/common-frontend.env
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 8G
+          
