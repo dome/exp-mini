@@ -15,3 +15,9 @@ services:
     volumes:
       - ./logs/:/app/logs/
       - ./dets/:/app/dets/
+    deploy:
+      resources:
+        limits:
+          cpus: "4.0"
+          memory: 8G
+          
